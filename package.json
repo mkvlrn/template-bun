@@ -10,10 +10,7 @@
     "type": "git",
     "url": "git@github.com:mkvlrn/template-bun"
   },
-  "keywords": [
-    "bun",
-    "template"
-  ],
+  "keywords": ["bun", "template"],
   "scripts": {
     "types": "tsc --noEmit",
     "coverage": "rm -rf coverage && bun test --coverage --coverage-reporter=lcov",
@@ -24,16 +21,13 @@
     "start": "bun run src/main.ts"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.0",
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
-    "@mkvlrn/eslint": "^0.1.6",
-    "@mkvlrn/prettier": "^0.0.5",
     "@mkvlrn/tsconfig": "^0.0.5",
     "@types/bun": "^1.1.9",
-    "eslint": "^9.10.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
-    "prettier": "^3.3.3",
     "typescript": "^5.6.2"
   }
 }

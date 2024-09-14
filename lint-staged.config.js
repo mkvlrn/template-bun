@@ -1,4 +1,5 @@
 export default {
-  "*.(ts|tsx)": ["eslint --fix", "prettier --write"],
-  "*.(json)": ["prettier --write"],
+  "*": [
+    "biome check --write --unsafe --no-errors-on-unmatched --files-ignore-unknown=true",
+  ],
 };
