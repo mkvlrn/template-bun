@@ -1,0 +1,10 @@
+{
+  "extends": "@mkvlrn/tsconfig/tsconfig.node.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": { "~/*": ["./src/*"], "#/*": ["./tests/*"] }
+  }
+}
