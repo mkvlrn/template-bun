@@ -1,3 +1,4 @@
 bun tsc --noEmit
-bun biome check
+bun eslint src tests
+bun prettier --check src tests
 bun test --bail
