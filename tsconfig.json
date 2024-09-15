@@ -1,9 +1,8 @@
 {
-  "extends": "@mkvlrn/tsconfig/tsconfig.node.json",
+  "extends": "@mkvlrn/configurations/tsconfig-base",
   "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
     "rootDir": "./",
+    "outDir": "./dist",
     "baseUrl": "./",
     "paths": { "~/*": ["./src/*"], "#/*": ["./tests/*"] }
   }
