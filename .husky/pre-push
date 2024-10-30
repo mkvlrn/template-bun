@@ -1,0 +1,4 @@
+bun tsc --noEmit
+bun eslint src/**/*.ts test/**/*.ts
+bun prettier --check src test
+bun test --bail

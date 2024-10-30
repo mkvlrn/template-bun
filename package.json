@@ -1,0 +1,37 @@
+{
+  "name": "template-bun",
+  "description": "A template for Bun projects",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "author": "Mike Valeriano <mkvlrn@proton.me>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mkvlrn/template-bun"
+  },
+  "keywords": [
+    "bun",
+    "template"
+  ],
+  "scripts": {
+    "dev": "bun --watch src/main.ts",
+    "start": "bun run src/main.ts",
+    "test:cov": "rm -rf coverage && bun test --coverage --coverage-reporter=lcov",
+    "lint": "eslint --fix src tests",
+    "format": "prettier --write src test",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@mkvlrn/config": "^1.0.4",
+    "@types/bun": "^1.1.12",
+    "eslint": "^9.13.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  }
+}
