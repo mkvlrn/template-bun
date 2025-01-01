@@ -12,12 +12,11 @@ jobs:
   run-checks:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-    - uses: oven-sh/setup-bun@v2
-    - run: bun install
-    - run: bun tsc --noEmit
-    - run: bun eslint src/**/*.ts test/**/*.ts
-    - run: bun prettier --check src test
-    - run: bun test --bail
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun typecheck
+      - run: bun tidy
+      - run: bun test --bail
