@@ -17,6 +17,9 @@ jobs:
           fetch-depth: 0
       - uses: oven-sh/setup-bun@v2
       - run: bun install
-      - run: bun typecheck
-      - run: bun tidy
-      - run: bun test --bail
+      - run: |
+          if [ -f .husky/pre-push ]; then
+            bash .husky/pre-push
+          else
+            echo "No pre-push hook found"
+          fi

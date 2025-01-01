@@ -16,7 +16,7 @@
     "start": "bun src/main.ts",
     "test:cov": "bun test --coverage",
     "test:ci": "rm -rf coverage && bun test --bail --coverage --coverage-reporter=lcov",
-    "tidy": "bun biome check --write src test",
+    "tidy": "bun scripts/tidy.ts",
     "typecheck": "bun tsc --noEmit",
     "prepare": "bun husky"
   },
