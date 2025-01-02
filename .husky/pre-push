@@ -1,1 +1,1 @@
-bun typecheck && bun tidy && bun test --bail
+bun typecheck && bun biome check --no-errors-on-unmatched && bun test --bail
