@@ -14,9 +14,8 @@
   "scripts": {
     "dev": "bun --watch src/main.ts",
     "start": "bun src/main.ts",
-    "test:cov": "bun test --coverage",
     "test:ci": "rm -rf coverage && bun test --bail --coverage --coverage-reporter=lcov",
-    "tidy": "bun scripts/tidy.ts",
+    "tidy": "bun biome check --write --no-errors-on-unmatched",
     "typecheck": "bun tsc --noEmit",
     "prepare": "bun husky"
   },
