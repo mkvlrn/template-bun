@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "files": {
+    "ignoreUnknown": true,
+    "includes": [
+      "**/*",
+      "!**/node_modules/**/*",
+      "!**/build/**/*",
+      "!**/coverage/**/*",
+      "!**/*.d.ts"
+    ]
+  },
+  "extends": ["@mkvlrn/config/biome.json"]
+}

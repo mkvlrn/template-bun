@@ -1,0 +1,6 @@
+[tools]
+bun = "1.3.14"
+
+[settings]
+disable_backends = ["asdf"]
+use_versions_host = false
