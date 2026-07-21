@@ -23,7 +23,7 @@
     "lint-check": "biome check --diagnostic-level=warn --no-errors-on-unmatched",
     "typecheck": "tsc",
     "typecheck-staged": "tsc-files",
-    "test-staged": "bun test related --bail --reporter=dots",
+    "test-staged": "bun test --changed --bail --reporter=dots",
     "test-ci": "bun test --bail --reporter=dots",
     "prepare": "lefthook install"
   },
