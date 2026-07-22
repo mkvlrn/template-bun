@@ -4,7 +4,7 @@ commitlint = { run = "bun commitlint -x @commitlint/config-conventional --edit $
 [pre-commit.commands]
 typecheck = { glob = "*.{ts,tsx}", run = "bun typecheck-staged {staged_files}" }
 lint = { glob = "*.{ts,tsx,json,jsonc}", run = "bun lint-check {staged_files}" }
-test = { glob = "*.{ts,tsx}", run = "bun test-staged {staged_files}" }
+test = { glob = "*.{ts,tsx}", run = "bun test-staged" }
 
 [pre-push.commands]
 typecheck = { run = "bun typecheck" }
