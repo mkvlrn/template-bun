@@ -6,7 +6,7 @@ test.each<{ a: number; b: number; op: (a: number, b: number) => number; expected
   { a: 2, b: 2, op: subtract, expected: 0 },
   { a: 2, b: 2, op: multiply, expected: 4 },
   { a: 2, b: 2, op: divide, expected: 1 },
-])("should find: $op.name($a, $b) = $expected", ({ a, b, op, expected }) => {
+])("should calculate: $op.name($a, $b) = $expected", ({ a, b, op, expected }) => {
   const result = op(a, b);
 
   expect(expected).toEqual(result);
