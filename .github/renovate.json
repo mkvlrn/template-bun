@@ -11,7 +11,7 @@
       "groupName": "Toolchain (mise)"
     },
     {
-      "matchManagers": ["bun"],
+      "matchManagers": ["npm"],
       "groupName": "Dependencies (bun)"
     },
     {
