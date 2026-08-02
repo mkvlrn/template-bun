@@ -25,11 +25,11 @@ run = "biome check --diagnostic-level=warn --no-errors-on-unmatched --write"
 description = "Run tsc"
 run = "tsc"
 [tasks.test]
-description = "Run vitest"
+description = "Run tests"
 run = "bun test --coverage"
 [tasks.test-staged]
-description = "Run vitest on staged files"
+description = "Run tests on staged files"
 run = "bun test --changed --bail --reporter=dots"
 [tasks.test-ci]
-description = "Run vitest in ci mode"
+description = "Run tests in ci mode"
 run = "bun test --bail --reporter=dots"
