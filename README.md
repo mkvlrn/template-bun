@@ -7,30 +7,24 @@
 
 A sane, opinionated bun template.
 
-> [!NOTE]
-> This template provides a [mise](https://mise.jdx.dev) configuration to make it easy to keep bun versions in sync.
+> [!CAUTION]
+> This template requires [mise](https://mise.jdx.dev) to manage runtimes, tools, and tasks in a single workflow, providing a lightweight alternative to devcontainers.
+>
+> You must [install mise](https://mise.jdx.dev/installing-mise.html) before starting. If you prefer a less opinionated setup, this template isn't for you.
 
 Uses, among other tools/packages:
 
 - [biome](https://github.com/biomejs/biome) for code linting and formatting
 - [lefthook](https://github.com/evilmartians/lefthook) for git hooks
-- [commitlint](https://github.com/conventional-changelog/commitlint) for commit message linting
+- [cocogitto](https://github.com/cocogitto/cocogitto) for commit message linting
 
 ## requirements and dependencies
 
-If you use [mise](https://mise.jdx.dev) and run `mise install` in the project root, you'll have the correct bun version installed.
+As noted at the top, you need [mise](https://mise.jdx.dev) to get started with this template. Run `mise install` in the project root to fetch the pinned versions of Node and other tools locally.
 
-This is _by far_ the easiest way to keep your environment consistent across different machines and team members, no matter the frequency of version updates. I'm not affiliated with mise but I wholeheartedly recommend it, so check it here: https://mise.jdx.dev.
+This is _by far_ the easiest way to keep your environment consistent across different machines and team members, no matter the frequency of version updates.
 
-If not using mise, make sure you have:
-
-- bun 1.3+ installed
-
-Then, install dependencies with:
-
-```bash
-bun install
-```
+Once the tooling is installed, you can install the Node dependencies with `bun install`.
 
 > [!NOTE]
 > Git hooks are in place to make sure both the tooling managed by mise and the project dependencies are synced with each checkout and merge.
@@ -41,15 +35,11 @@ bun install
 
 Runs the project in watch mode.
 
-### `bun start`
-
-Runs the project.
-
 ### `bun test`
 
 Runs tests.
 
-### `bun biome-fix`
+### `bun lint-fix`
 
 Runs biome in fix mode to lint and format the project.
 
