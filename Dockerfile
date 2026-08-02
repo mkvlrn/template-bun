@@ -6,6 +6,6 @@ ENV NODE_ENV=production
 COPY package.json tsconfig.json bun.lock bunfig.toml ./
 RUN bun install --frozen-lockfile --production --ignore-scripts
 COPY src/ ./src/
-USER node
+USER bun
 
 CMD ["bun", "src/main.ts"]
