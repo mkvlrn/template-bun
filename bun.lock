@@ -5,14 +5,14 @@
     "": {
       "name": "template-node",
       "devDependencies": {
-        "@mkvlrn/config": "npm:@jsr/mkvlrn__config@0.2.1",
+        "@mkvlrn/config": "npm:@jsr/mkvlrn__config@0.3.1",
         "@types/bun": "1.3.14",
         "typescript": "7.0.2",
       },
     },
   },
   "packages": {
-    "@mkvlrn/config": ["@jsr/mkvlrn__config@0.2.1", "https://npm.jsr.io/~/11/@jsr/mkvlrn__config/0.2.1.tgz", {}, "sha512-DeTblNivf9cWZhmrUEuuswFIl17rNbdu6zMRXnCiBj4HE05ydZNIESkkZyBGx9aqu2YdErScyYEappjR3uSkBw=="],
+    "@mkvlrn/config": ["@jsr/mkvlrn__config@0.3.1", "https://npm.jsr.io/~/11/@jsr/mkvlrn__config/0.3.1.tgz", {}, "sha512-G5K8meXpuDVhS6M6dWYMPiNt4AXU327ESW//hSuDWvlaJ9L7DAprGpJM0JvPEp6K95kuWyy1DOo0PnwHCQgMTA=="],
 
     "@types/bun": ["@types/bun@1.3.14", "", { "dependencies": { "bun-types": "1.3.14" } }, "sha512-h1hFqFVcvAvD9j9K7ZW7vd82aSA+rTdznZa+5bwvCwqSB1jmmfLcbIWhOLx1/+boy/xmjgCs/OMUL8hRJSmnPw=="],
 
