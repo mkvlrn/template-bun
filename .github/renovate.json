@@ -1,22 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
+  "extends": ["config:best-practices"],
+  "ignorePresets": ["security:minimumReleaseAgeNpm"],
   "packageRules": [
     {
-      "matchPackageNames": ["github:**"],
-      "groupName": "Toolchain (mise)"
+      "matchPackageNames": ["^@mkvlrn"],
+      "minimumReleaseAge": null
+    },
+    {
+      "matchManagers": ["npm"],
+      "groupName": "npm dependencies",
+      "groupSlug": "npm"
     },
     {
       "matchManagers": ["mise"],
-      "groupName": "Toolchain (mise)"
-    },
-    {
-      "matchManagers": ["bun"],
-      "groupName": "Dependencies (bun)"
-    },
-    {
-      "matchManagers": ["github-actions"],
-      "groupName": "GitHub Actions"
+      "groupName": "mise tools",
+      "groupSlug": "mise"
     }
   ],
   "customManagers": [
