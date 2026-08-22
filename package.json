@@ -19,16 +19,16 @@
   "devEngines": {
     "runtime": {
       "name": "bun",
-      "version": "1.3.14"
+      "version": "1.4.0"
     },
     "packageManager": {
       "name": "bun",
-      "version": "1.3.14"
+      "version": "1.4.0"
     }
   },
   "devDependencies": {
-    "@mkvlrn/config": "0.4.6",
-    "@types/bun": "1.3.14",
+    "@mkvlrn/config": "0.4.7",
+    "@types/bun": "1.4.0",
     "typescript": "7.0.2"
   }
 }
