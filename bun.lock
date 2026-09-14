@@ -5,14 +5,14 @@
     "": {
       "name": "template-node",
       "devDependencies": {
-        "@mkvlrn/config": "0.5.1",
+        "@mkvlrn/config": "0.6.1",
         "@types/bun": "1.4.2",
         "typescript": "7.0.2",
       },
     },
   },
   "packages": {
-    "@mkvlrn/config": ["@mkvlrn/config@0.5.1", "", {}, "sha512-ltbSjkMxhRQB7p1IuOPmtJG+ZG4V+Y2LrP1vnMQBE1jlvBI3QMP52cUBf0RL0TIiPurC8xxoSeiAW4k7ArDS9w=="],
+    "@mkvlrn/config": ["@mkvlrn/config@0.6.1", "", {}, "sha512-GvtNfyE1wyeNkzP+QuQ5/zTVqzpVgm6BZ3xjoMlCFz/B7G+SouXwkxW+WeUdymVKYLGYAIfPEHcIAcfpiipNew=="],
 
     "@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
