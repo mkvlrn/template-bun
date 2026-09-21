@@ -46,7 +46,7 @@ run = "bun test --bail --reporter=dots"
 [tasks.sync-branch]
 description = "Sync package manager deps"
 run = """
+mise install
 mise prune -y
 bun install --frozen-lockfile
-lefthook install
 """
