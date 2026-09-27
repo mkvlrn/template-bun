@@ -19,11 +19,13 @@
   "devEngines": {
     "runtime": {
       "name": "bun",
-      "version": "1.4.2"
+      "version": "1.4.2",
+      "onFail": "ignore"
     },
     "packageManager": {
       "name": "bun",
-      "version": "1.4.2"
+      "version": "1.4.2",
+      "onFail": "ignore"
     }
   },
   "devDependencies": {
