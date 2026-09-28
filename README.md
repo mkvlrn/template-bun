@@ -44,19 +44,19 @@ If you prefer not to use the Dev Container, install [mise](https://mise.jdx.dev)
 
 ## running
 
-### `mise dev`
+### `mise run dev`
 
 Runs the project in watch mode.
 
-### `mise test`
+### `mise run test`
 
 Runs the tests.
 
-### `mise lint-fix`
+### `mise run lint-fix`
 
 Runs Biome in fix mode to lint and format the project.
 
-### `mise typecheck`
+### `mise run typecheck`
 
 Runs TypeScript type checking.
 
