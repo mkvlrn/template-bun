@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #MISE description="Combine all open Renovate PRs into one PR"
+
 set -euo pipefail
 
 git fetch origin '+refs/heads/*:refs/remotes/origin/*'
