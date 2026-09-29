@@ -11,5 +11,14 @@
       "!**/*.d.ts"
     ]
   },
-  "extends": ["@mkvlrn/config/biome"]
+  "extends": ["@mkvlrn/config/biome"],
+  "javascript": {
+    "globals": ["Bun"]
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.ts"],
+      "linter": { "rules": { "performance": { "noNamespaceImport": "off" } } }
+    }
+  ]
 }
